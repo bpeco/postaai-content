@@ -1,57 +1,8 @@
 {
   "date": "2026-05-31",
-  "edition": "Edición de la mañana · 09:00",
+  "edition": "Edición pausada",
   "number": 301,
-  "status": "published",
-  "cards": [
-    {
-      "id": "accenture-ookla",
-      "tag": "Accenture",
-      "headline": "Accenture se compra Ookla para meterle data y AI a las redes",
-      "take": "El gigante de la consultoría se queda con la dueña de Speedtest para potenciar su 'network intelligence' con data y AI para empresas.",
-      "context": "Accenture anunció la adquisición de Ookla —la empresa detrás de Speedtest— para reforzar su oferta de inteligencia de redes y experiencia con data y AI para clientes corporativos. El comunicado no detalla monto ni condiciones de la operación por ahora.",
-      "editorial": "El take de Posta: otra señal de que la consultoría tradicional quiere su tajada del combo data + AI. Comprar infra de medición de redes es apuesta a largo plazo, no marketing.",
-      "source": "https://newsroom.accenture.com/news/2026/accenture-to-acquire-ookla-to-strengthen-network-intelligence-and-experience-with-data-and-ai-for-enterprises",
-      "sourceLabel": "accenture.com",
-      "published_at": "2026-05-30T16:28:58+00:00",
-      "kind": ["negocio"]
-    },
-    {
-      "id": "gemini-omni-35-demos",
-      "tag": "Google DeepMind",
-      "headline": "9 demos de Gemini Omni y Gemini 3.5 en acción",
-      "take": "Google soltó 9 videos mostrando lo que pueden hacer Gemini Omni y Gemini 3.5, los modelos que presentó en el I/O 2026.",
-      "context": "En el marco de Google I/O 2026, Google publicó 9 videos con las capacidades de sus dos modelos nuevos: Gemini Omni y Gemini 3.5. Es una muestra en video; el post no entra en specs técnicas ni benchmarks.",
-      "editorial": "El take de Posta: Google viene pisando fuerte post-I/O. Mostrar en video en vez de tablas de benchmarks es jugar en la cancha del usuario, no en la del researcher.",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
-      "sourceLabel": "blog.google",
-      "published_at": "2026-05-29T17:30:00+00:00",
-      "kind": ["modelos"]
-    },
-    {
-      "id": "aie-fde-founders",
-      "tag": "AI Engineer",
-      "headline": "Se vienen los Forward Deployed Engineers: AIE abre track y programa de Founders",
-      "take": "El newsletter AINews abre convocatoria para los mejores Forward Deployed Engineers del mundo y suma un programa de Founders estilo Startup Battlefield.",
-      "context": "AIE anunció un nuevo track de Forward Deployed Engineers —espejando movidas de OpenAI DeployCo y Anthropic DeployCo— más un programa de Founders con un concurso de pitches competitivo. El posteo arranca mencionando 'noticias grandes de Anthropic' del día anterior, pero no las detalla acá.",
-      "editorial": "El take de Posta: el rol de Forward Deployed Engineer pasó de jerga de Palantir a la nueva fiebre del oro de la AI aplicada. Que OpenAI y Anthropic armen sus 'DeployCo' lo dice todo.",
-      "source": "https://www.latent.space/p/ainews-founders-and-forward-deployed",
-      "sourceLabel": "latent.space",
-      "published_at": "2026-05-30T01:57:15+00:00",
-      "kind": ["negocio"]
-    },
-    {
-      "id": "claude-code-2-1-114",
-      "tag": "Anthropic",
-      "headline": "Claude Code 2.1.114: fix a un crash en el diálogo de permisos",
-      "take": "Patch chico de Claude Code que arregla un crash cuando un compañero de 'agent teams' pedía permiso para usar una tool.",
-      "context": "Anthropic publicó la v2.1.114 de Claude Code. El cambio: arreglaron un crash en el diálogo de permisos que saltaba cuando un teammate de 'agent teams' solicitaba permiso para una tool. Es una entrada de changelog, sin más contexto.",
-      "editorial": "El take de Posta: detalle menor, pero confirma que 'agent teams' —varios agentes laburando juntos— ya está vivo dentro de Claude Code.",
-      "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21114",
-      "sourceLabel": "github.com",
-      "published_at": "2026-05-31T13:15:37Z",
-      "kind": ["codigo", "agentes"],
-      "product": "Claude Code"
-    }
-  ]
+  "status": "paused",
+  "pause_message": "Hoy no hay drop — los algoritmos están durmiendo la siesta. Volvé en un rato.",
+  "cards": []
 }
