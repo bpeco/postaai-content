@@ -9,10 +9,16 @@ Pool JSON publicados por el pipeline de [PostaAI](https://github.com/bpeco/) (mo
 
 ## Cómo se publica
 
-El script `ai-digest/scripts/publish-pool.sh` (en el repo principal) corre como fase 10 del pipeline 2x/día y hace `cp` + `git commit/push` acá. Vercel deploya automáticamente cuando aparece un commit nuevo.
+El cron de GitHub Actions vive en el repo de código (`bpeco/postaai`, workflow `digest`), corre 2x/día (09:00 / 18:00 ART) en modo `--pool-only`, genera el Pool y lo pushea acá vía la fase 10 (`ai-digest/scripts/publish-pool.sh`). Vercel deploya automáticamente cuando aparece un commit nuevo.
 
-## Kill switch (manual, sin tipear git crudo)
+> El mismo pipeline también corre local en la Mac de Bauti vía launchd, pero eso se apaga cuando el cron en la nube queda validado (sino se duplican drops).
 
-Para pausar el drop del día desde el celu: editar `latest.json`, cambiar `"status": "published"` por `"status": "paused"` y agregar `"pause_message": "..."`. Push. La app renderea `PausedScreen` con ese mensaje.
+## Kill switch
 
-Para revertir: `git revert HEAD && git push` (o reemplazar `latest.json` por uno del `archive/`).
+**Desde el celu (sin git, sin terminal):** pestaña **Actions** → workflow **kill-switch** → **Run workflow** → elegí `pause` o `unpause`.
+- `pause` guarda el Pool actual en `latest.prepause.json` y escribe un stub `{status:"paused", pause_message, cards:[]}` → la app muestra `PausedScreen`.
+- `unpause` restaura el último Pool bueno desde `latest.prepause.json`.
+
+**Desde la compu:** `./scripts/pause.sh ["mensaje custom"]` y `./scripts/unpause.sh`.
+
+> Ojo: un `pause` dura, como mucho, hasta la próxima edición — el siguiente run del cron sobreescribe `latest.json` con un Pool fresco. `unpause` es para volver al Pool bueno **ya**.

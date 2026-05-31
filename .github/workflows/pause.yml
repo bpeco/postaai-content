@@ -1,0 +1,79 @@
+name: kill-switch
+
+# Pausá / despausá el drop del día desde el CELU sin tipear git.
+# Desde la app de GitHub (o la web): Actions → kill-switch → "Run workflow" →
+# elegí pause o unpause. La app iOS lee `status` de latest.json:
+#   - pause   → escribe un stub {status:"paused", pause_message, cards:[]} → la app muestra PausedScreen.
+#   - unpause → restaura el último Pool bueno desde latest.prepause.json (lo que había antes del pause).
+#
+# El próximo run del cron (en bpeco/postaai) igual va a sobreescribir latest.json con un Pool
+# fresco, así que un pause dura, como mucho, hasta la próxima edición. unpause es para volver YA.
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Qué hacer"
+        type: choice
+        required: true
+        default: pause
+        options:
+          - pause
+          - unpause
+      message:
+        description: "Mensaje del pause (solo aplica a pause)"
+        type: string
+        required: false
+        default: "Hoy no hay drop — los algoritmos están durmiendo la siesta. Volvé en un rato."
+
+permissions:
+  contents: write # commitea latest.json en ESTE repo (mismo repo → alcanza el GITHUB_TOKEN del job)
+
+concurrency:
+  group: kill-switch
+  cancel-in-progress: false
+
+jobs:
+  toggle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Toggle pause/unpause
+        # Las inputs van por env (NO interpoladas en el shell) para evitar inyección de comandos.
+        env:
+          ACTION: ${{ inputs.action }}
+          MESSAGE: ${{ inputs.message }}
+        run: |
+          set -euo pipefail
+          git config user.name "postaai-bot"
+          git config user.email "bot@postaai.app"
+
+          if [ "$ACTION" = "pause" ]; then
+            if [ ! -f latest.json ]; then
+              echo "kill-switch: no hay latest.json para pausar" >&2; exit 1
+            fi
+            # Backup del Pool actual (para poder despausar) y stub paused conservando meta.
+            cp latest.json latest.prepause.json
+            jq --arg msg "$MESSAGE" \
+              '{date, edition, number, status: "paused", pause_message: $msg, cards: []}' \
+              latest.prepause.json > latest.json
+            git add latest.json latest.prepause.json
+            COMMIT_MSG="kill-switch: PAUSE"
+          else
+            if [ ! -f latest.prepause.json ]; then
+              echo "kill-switch: no hay latest.prepause.json — nada que restaurar (¿ya estaba despausado?)" >&2
+              exit 1
+            fi
+            cp latest.prepause.json latest.json
+            git add latest.json
+            COMMIT_MSG="kill-switch: UNPAUSE"
+          fi
+
+          if git diff --cached --quiet; then
+            echo "kill-switch: sin cambios, skip commit" >&2
+            exit 0
+          fi
+          git commit -m "$COMMIT_MSG ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          git push
