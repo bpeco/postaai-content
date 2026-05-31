@@ -47,8 +47,10 @@ jobs:
           MESSAGE: ${{ inputs.message }}
         run: |
           set -euo pipefail
-          git config user.name "postaai-bot"
-          git config user.email "bot@postaai.app"
+          # Email del bot de GitHub Actions: matchea una cuenta real → Vercel deploya.
+          # (Con un email inventado, Vercel bloquea el deploy y el pause no surte efecto.)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           if [ "$ACTION" = "pause" ]; then
             if [ ! -f latest.json ]; then
