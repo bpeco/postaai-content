@@ -45,10 +45,12 @@ jobs:
         env:
           ACTION: ${{ inputs.action }}
           MESSAGE: ${{ inputs.message }}
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
         run: |
           set -euo pipefail
-          # Email del bot de GitHub Actions: matchea una cuenta real → Vercel deploya.
-          # (Con un email inventado, Vercel bloquea el deploy y el pause no surte efecto.)
+          # Identidad git válida cualquiera. El deploy a Vercel lo dispara el Deploy Hook
+          # al final (Hobby + repo privado bloquea el auto-deploy por-autor del Git integration).
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -79,3 +81,10 @@ jobs:
           fi
           git commit -m "$COMMIT_MSG ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
           git push
+
+          # Disparar el deploy en Vercel sin depender del autor del commit.
+          if [ -n "${HOOK:-}" ]; then
+            curl -fsS -X POST "$HOOK" > /dev/null && echo "Deploy hook disparado OK" >&2
+          else
+            echo "VERCEL_DEPLOY_HOOK_URL no seteado — skip deploy hook" >&2
+          fi
