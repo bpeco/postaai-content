@@ -1,46 +1,5 @@
 {
   "date": "2026-06-14",
-<<<<<<< Updated upstream
-  "edition": "Edición de la mañana · 09:00",
-  "number": 329,
-  "status": "published",
-  "cards": [
-    {
-      "id": "fable-mythos-revocados",
-      "tag": "Anthropic",
-      "headline": "Anthropic bajó Fable y Mythos: jailbreak con riesgo de seguridad nacional",
-      "take": "Tres días después de lanzarlos, Anthropic revocó el acceso a Fable y Mythos para todos sus clientes. El motivo: un posible jailbreak con implicaciones de ciberseguridad nacional.",
-      "context": "Fable y Mythos, los últimos modelos de Anthropic lanzados hace apenas 3 días, fueron revocados para la totalidad de clientes. La razón declarada es un posible jailbreak que podría tener implicaciones de ciberseguridad a nivel nacional. Latent Space reportó el movimiento al cierre de una semana especialmente activa en el espacio AI. No se publicaron detalles técnicos sobre la naturaleza del jailbreak.",
-      "editorial": "Revocar modelos recién lanzados en masa es un paso que Anthropic no tomaría a la ligera. Si el jailbreak tiene dimensión de seguridad nacional real, esto va a tener coletazos regulatorios importantes — y lo que pase esta semana va a marcar precedente para toda la industria.",
-      "source": "https://www.latent.space/p/ainews-fable-and-mythos-officially",
-      "sourceLabel": "latent.space",
-      "published_at": "2026-06-13T04:30:52+00:00",
-      "kind": ["modelos", "regulacion"]
-    },
-    {
-      "id": "amazon-ceo-anthropic-crackdown",
-      "tag": "Amazon",
-      "headline": "CEO de Amazon activó el crackdown del gobierno sobre los modelos de Anthropic",
-      "take": "Charlas entre el CEO de Amazon y funcionarios estadounidenses fueron el detonante del crackdown sobre los modelos de Anthropic, según reportó la WSJ.",
-      "context": "La WSJ publicó que conversaciones del CEO de Amazon con funcionarios del gobierno de EE.UU. desencadenaron la restricción sobre los modelos de Anthropic. El artículo de la WSJ no incluye más detalles en el resumen disponible sobre el contenido o alcance de esas conversaciones.",
-      "editorial": "Que Amazon —el mayor inversor de Anthropic— sea el origen del golpe contra sus propios modelos es un giro muy raro. Intereses corporativos y seguridad nacional mezclados en el mismo cóctel, y todavía no cierra del todo.",
-      "source": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink",
-      "sourceLabel": "wsj.com",
-      "published_at": "2026-06-13T16:57:49+00:00",
-      "kind": ["regulacion", "negocio"]
-    },
-    {
-      "id": "claude-code-v2-1-114",
-      "tag": "Anthropic",
-      "headline": "Claude Code v2.1.114: fix a un crash en el diálogo de permisos de agent teams",
-      "take": "La última versión de Claude Code corrige un crash que aparecía cuando un compañero de equipo en agent teams solicitaba permiso para usar una herramienta.",
-      "context": "Claude Code v2.1.114 resuelve un crash en el diálogo de permisos: ocurría específicamente cuando un 'teammate' dentro de un agent team pedía permiso para ejecutar una tool. El changelog no detalla más cambios en esta versión.",
-      "editorial": "Fix puntual pero importante si usás agent teams en producción. Los crashes en diálogos de permisos son justo el tipo de bug que frena la adopción de flujos multi-agente en el momento en que más tracción están ganando.",
-      "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21114",
-      "sourceLabel": "github.com",
-      "published_at": "2026-06-14T13:25:36Z",
-      "kind": ["codigo", "agentes"],
-=======
   "edition": "Edición de la tarde · 18:00",
   "number": 330,
   "status": "published",
@@ -92,7 +51,6 @@
       "sourceLabel": "github.com",
       "published_at": "2026-06-14T21:03:05Z",
       "kind": ["codigo"],
->>>>>>> Stashed changes
       "product": "Claude Code"
     }
   ]
