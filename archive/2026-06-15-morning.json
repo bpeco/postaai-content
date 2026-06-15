@@ -1,42 +1,4 @@
 {
-<<<<<<< Updated upstream
-  "date": "2026-06-14",
-  "edition": "Edición de la tarde · 18:00",
-  "number": 330,
-  "status": "published",
-  "cards": [
-    {
-      "id": "anthropic-fable-mythos-revocados",
-      "tag": "Anthropic",
-      "headline": "Fable y Mythos revocados: Anthropic los bajó por jailbreak con riesgo nacional",
-      "take": "A apenas 3 días del lanzamiento, Anthropic retiró Fable y Mythos para todos los clientes. El motivo: un posible jailbreak con implicancias de ciberseguridad nacional.",
-      "context": "Según el resumen de AINews de Latent Space, Fable y Mythos —lanzados apenas 3 días antes— fueron revocados para todos los clientes de Anthropic. La razón citada es un posible jailbreak que derivaría en un riesgo de ciberseguridad nacional. No hay detalles técnicos públicos disponibles sobre el vector ni el alcance exacto del problema.",
-      "editorial": "Que Anthropic baje dos modelos en 72 horas habla del nivel de seriedad con que toman la seguridad — o del nivel de quilombo que encontraron adentro. 'Posible jailbreak de ciberseguridad nacional' no suena a comunicado de marketing: esto es posta serio.",
-      "source": "https://www.latent.space/p/ainews-fable-and-mythos-officially",
-      "sourceLabel": "latent.space",
-      "published_at": "2026-06-13T04:30:52+00:00",
-      "kind": ["modelos", "regulacion"]
-    },
-    {
-      "id": "ai-adoption-fragmentada-weinberg",
-      "tag": "Gabriel Weinberg",
-      "headline": "No todo el mundo usa AI para todo: el post que reventó HN con 406 comentarios",
-      "take": "Un artículo de Gabriel Weinberg explotó en Hacker News. La tesis: la adopción de AI es mucho más fragmentada de lo que el hype sugiere.",
-      "context": "El post de Gabriel Weinberg (fundador de DuckDuckGo) acumuló 384 puntos y más de 400 comentarios en HN, lo que lo convierte en uno de los más discutidos del día. No hay summary disponible; el título y el slug de la URL ('people-are-consuming-ai-like-they') indican que el argumento gira en torno a la adopción selectiva — no masiva — de AI entre los usuarios reales.",
-      "editorial": "Con 406 comentarios en HN, algo tocó un nervio. El hype dice que todos estamos usando AI para todo — evidentemente no. Vale la pena leer el artículo completo.",
-      "source": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
-      "sourceLabel": "gabrielweinberg.com",
-      "published_at": "2026-06-14T14:44:29+00:00",
-      "kind": ["negocio"]
-    },
-    {
-      "id": "trace-mac-transcripciones-offline",
-      "tag": "Trace",
-      "headline": "Trace: transcripciones de reuniones offline en Mac con flags en tiempo real",
-      "take": "Una app Mac que graba y transcribe tus reuniones sin mandar nada a la nube, y te deja marcar momentos clave mientras la llamada está corriendo.",
-      "context": "Trace es un Show HN orientado a la privacidad: hace transcripciones de reuniones completamente offline en Mac. El diferencial es poder flaggear momentos importantes durante la llamada sin depender de ningún servidor externo. No hay summary adicional disponible más allá de la descripción del título en HN.",
-      "editorial": "En un mundo donde toda app de transcripción manda tu audio a la nube, el enfoque offline es un nicho válido. Si trabajás con info sensible o simplemente no querés regalar tus reuniones a un tercero, tiene mucho sentido.",
-=======
   "date": "2026-06-15",
   "edition": "Edición de la mañana · 09:00",
   "number": 331,
@@ -121,24 +83,14 @@
       "take": "Una app de Mac que transcribe reuniones sin nube y te deja flaguear momentos en plena llamada.",
       "context": "En Show HN presentaron Trace, una app de Mac para transcripciones de reuniones offline (sin mandar el audio a la nube) que permite marcar momentos mientras la llamada está en curso. Pegó fuerte en Hacker News: 176 puntos y 65 comentarios.",
       "editorial": "El ángulo 'offline' es el gancho: en un mundo de transcriptores que suben todo a la nube, vender privacidad local es una jugada que cada vez más gente valora. Bien pensado.",
->>>>>>> Stashed changes
       "source": "https://traceapp.info",
       "sourceLabel": "traceapp.info",
-      "published_at": "2026-06-13T20:41:58+00:00",
+      "published_at": "2026-06-13T20:41:58Z",
       "kind": ["producto"]
     },
     {
-      "id": "claude-code-v2-1-114-crash-fix",
+      "id": "claude-code-2-1-114",
       "tag": "Anthropic",
-<<<<<<< Updated upstream
-      "headline": "Claude Code v2.1.114: fix al crash en el diálogo de permisos de agentes",
-      "take": "Patch menor pero importante: Claude Code dejó de crashear cuando un agente dentro de un equipo pedía permiso para usar una herramienta.",
-      "context": "La versión 2.1.114 de Claude Code corrige un crash específico que ocurría en el diálogo de permisos cuando un agente integrante de un equipo solicitaba acceso a una herramienta. El fix es puntual y no introduce cambios de funcionalidad según el changelog.",
-      "editorial": "Bugfix quirúrgico. El hecho de que exista indica que el modo de agentes en equipo ya está siendo usado lo suficiente como para que este caso de borde justifique un release.",
-      "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21114",
-      "sourceLabel": "github.com",
-      "published_at": "2026-06-14T22:01:36Z",
-=======
       "headline": "Claude Code 2.1.114 corrige un crash en el diálogo de permisos",
       "take": "Update chico de Claude Code: arreglan un crasheo que pasaba cuando un compañero de un 'agent team' pedía permiso de tool.",
       "context": "El changelog de la v2.1.114 de Claude Code dice que se arregló un crash en el diálogo de permisos cuando un teammate de un agent team pedía permiso para usar una herramienta.",
@@ -146,7 +98,6 @@
       "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21114",
       "sourceLabel": "github.com",
       "published_at": "2026-06-15T12:46:52Z",
->>>>>>> Stashed changes
       "kind": ["codigo"],
       "product": "Claude Code"
     }
