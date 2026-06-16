@@ -5,18 +5,6 @@
   "status": "published",
   "cards": [
     {
-<<<<<<< Updated upstream
-      "id": "anthropic-mythos-fable-shutdown",
-      "tag": "Anthropic",
-      "headline": "Gobierno de EE.UU. obliga a Anthropic a bajar Mythos y Fable",
-      "take": "Anthropic discontinuó dos productos — Mythos y Fable — tras una orden del gobierno estadounidense. Los detalles de la medida todavía no son públicos.",
-      "context": "The Rundown AI reportó que Anthropic retiró Mythos y Fable en respuesta a una orden del gobierno de EE.UU. El artículo no especifica qué tipo de orden fue emitida, qué eran exactamente estos productos ni cuándo entró en efecto la medida. Anthropic no publicó comunicado propio al respecto.",
-      "editorial": "Que el gobierno de EE.UU. pueda ordenar a Anthropic dar de baja productos sin que la empresa lo anuncie públicamente es señal de que la regulación AI empieza a tener consecuencias concretas. Sea por seguridad nacional o cumplimiento, esto es un precedente que vale la pena seguir de cerca.",
-      "source": "https://www.therundown.ai/p/anthropic-pulls-mythos-fable-after-u-s-order",
-      "sourceLabel": "therundown.ai",
-      "published_at": "2026-06-15T09:00:00Z",
-      "kind": ["regulacion", "negocio"]
-=======
       "id": "anthropic-pulls-fable",
       "tag": "Anthropic",
       "headline": "Anthropic baja Mythos y Fable tras una orden de EE.UU.",
@@ -27,34 +15,14 @@
       "sourceLabel": "therundown.ai",
       "published_at": "2026-06-15T09:00:00Z",
       "kind": ["regulacion", "modelos"]
->>>>>>> Stashed changes
     },
     {
-      "id": "google-alabama-datacenter",
-      "tag": "Google",
-      "headline": "Google mete $1.500 millones en data centers de Alabama para 2026-2027",
-      "take": "Google anunció una inversión de $1.500 millones para expandir su campus de data centers en Jackson County, Alabama — operativo desde 2019 en un predio reconvertido.",
-      "context": "El campus de Google en Jackson County, Alabama funciona desde 2019 y fue instalado en infraestructura reconvertida. La nueva inversión de $1.500 millones se distribuye entre 2026 y 2027 para ampliar esa capacidad. El anuncio menciona también apoyo comunitario, aunque el artículo no detalla las iniciativas específicas.",
-      "editorial": "La guerra AI se gana también con cemento. Google sigue apostando a controlar su propia infraestructura en lugar de depender de terceros — una decisión que hace sentido cuando la demanda de cómputo no para de crecer.",
-      "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/alabama-investment-june-2026/",
-      "sourceLabel": "blog.google",
-      "published_at": "2026-06-15T15:00:00Z",
-      "kind": ["negocio"]
-    },
-    {
-      "id": "oai-partner-network",
+      "id": "openai-partner-network",
       "tag": "OpenAI",
-<<<<<<< Updated upstream
-      "headline": "OpenAI lanza su Partner Network con $150M para el mercado enterprise",
-      "take": "OpenAI creó una red global de socios respaldada con $150 millones para ayudar a empresas a adoptar e implementar AI a escala.",
-      "context": "El OpenAI Partner Network es una iniciativa con $150 millones destinada a conectar socios globales con organizaciones que buscan implementar y escalar AI en sus operaciones. El post describe el objetivo como acelerar la adopción, implementación y transformación enterprise. No detalla qué socios integran la red ni cómo se distribuyen los fondos.",
-      "editorial": "OpenAI está construyendo el ecosistema de distribución a la vieja usanza enterprise: socios, canales, red. Si lo logra, el que quiera venderle AI a una gran empresa va a tener que pasar por su red — o competir contra ella.",
-=======
       "headline": "OpenAI lanza su Partner Network con US$150 millones",
       "take": "OpenAI pone plata para que partners globales aceleren la adopción de AI en empresas.",
       "context": "OpenAI presentó el Partner Network, una iniciativa con una inversión de US$150 millones para ayudar a partners globales a acelerar la adopción, el despliegue y la transformación con AI en el mundo enterprise. El anuncio no detalla qué partners entran ni cómo se reparte esa inversión.",
       "editorial": "OpenAI sigue construyendo capa enterprise: no alcanza con tener el mejor modelo, hay que tener quién lo implemente en empresas que no saben por dónde arrancar.",
->>>>>>> Stashed changes
       "source": "https://openai.com/index/introducing-openai-partner-network",
       "sourceLabel": "openai.com",
       "published_at": "2026-06-14T17:00:00Z",
@@ -74,14 +42,6 @@
       "kind": ["negocio"]
     },
     {
-<<<<<<< Updated upstream
-      "id": "llm-judge-coin-flip",
-      "tag": "LLM Evals",
-      "headline": "Paper: ¿los LLMs que usamos como jueces de benchmarks son tan confiables como creemos?",
-      "take": "Un estudio analizó 29 tareas en 10 categorías con GPT-4o-mini y GPT-4.1-mini como jueces y encontró variabilidad y bias preocupantes en los resultados run-to-run.",
-      "context": "LLM-as-a-Judge es la práctica de usar modelos de lenguaje para evaluar outputs de otros modelos — se aplica para rankear resultados, entrenar reward models y poblar leaderboards públicos. El paper corre 50 trials pairwise y 50 pointwise por tarea con dos modelos de OpenAI como jueces y evidencia que la confiabilidad entre corridas está peor caracterizada de lo que se asume en el campo. El paper no detalla en el abstract los niveles exactos de variabilidad ni las correcciones propuestas.",
-      "editorial": "Si los leaderboards que usamos para comparar modelos están basados en jueces que dan resultados distintos cada vez que los corrés, tenemos un problema de base. Este paper incomoda, pero el campo lo necesitaba.",
-=======
       "id": "sequent-alignment-startup",
       "tag": "Sequent",
       "headline": "Nace Sequent: una startup de safety porque 'el alignment no va por buen camino'",
@@ -100,70 +60,24 @@
       "take": "Un estudio repite evaluaciones idénticas y muestra que la confiabilidad run-to-run de usar LLMs como jueces está poco caracterizada.",
       "context": "Un paper en arXiv estudia la confiabilidad de 'LLM-as-a-Judge', hoy usado para rankear outputs, entrenar reward models y armar leaderboards públicos. Corrieron evaluaciones idénticas repetidas sobre 29 tareas en 10 categorías, con dos modelos juez de OpenAI (GPT-4o-mini y GPT-4.1-mini), 50 pruebas pairwise y 50 pointwise. El foco es medir el ruido entre corridas iguales.",
       "editorial": "Si entrenás o rankeás modelos con un LLM de juez, esto te importa posta: un juez que cambia de opinión entre corridas idénticas te ensucia todo el pipeline.",
->>>>>>> Stashed changes
       "source": "https://arxiv.org/abs/2606.13685",
       "sourceLabel": "arxiv.org",
       "published_at": "2026-06-15T04:00:00Z",
       "kind": ["research"]
     },
     {
-<<<<<<< Updated upstream
-      "id": "webdecept-agent-safety",
-      "tag": "Web Agents",
-      "headline": "WebDecept: un framework para ver si los web agents caen en dark patterns de e-commerce",
-      "take": "Investigadores crearon WebDecept, un plugin que inyecta interfaces engañosas en e-commerce para medir qué tan seguros son los web agents autónomos ante dark patterns.",
-      "context": "El paper introduce WebDecept, un framework liviano y configurable que permite insertar de manera controlada interfaces deceptivas — del tipo que buscan manipular clics — en entornos de e-commerce. El objetivo es evaluar el comportamiento de web agents autónomos bajo estas condiciones realistas. El abstract no especifica qué agents se evaluaron ni qué resultados se obtuvieron.",
-      "editorial": "A medida que los agents hacen compras y transacciones en nuestro nombre, la pregunta de si pueden ser manipulados como nosotros se vuelve posta urgente. WebDecept es una herramienta para empezar a responderla.",
-=======
       "id": "web-agent-deceptive-interfaces",
       "tag": "arXiv",
       "headline": "Agents de compras vs. interfaces tramposas: el benchmark WebDecept",
       "take": "Un paper estudia cómo se portan los web agents autónomos frente a interfaces engañosas de e-commerce.",
       "context": "Investigadores presentan WebDecept, un framework liviano y configurable que inyecta de forma controlada interfaces engañosas para estudiar la seguridad de web agents autónomos en e-commerce. El trabajo parte de que estos agents cada vez hacen más tareas reales y su seguridad pasó a ser una preocupación crítica.",
       "editorial": "A medida que los agents te compran cosas solos, esto deja de ser académico: una web diseñada para engañar humanos también puede engañar a tu agent.",
->>>>>>> Stashed changes
       "source": "https://arxiv.org/abs/2606.13686",
       "sourceLabel": "arxiv.org",
       "published_at": "2026-06-15T04:00:00Z",
       "kind": ["agentes", "research"]
     },
     {
-<<<<<<< Updated upstream
-      "id": "homelab-ai-dev-platform",
-      "tag": "rsgm.dev",
-      "headline": "Un dev publica su plataforma AI para homelab y la rompe en Hacker News con 200 puntos",
-      "take": "El post de rsgm.dev sobre una plataforma AI local para desarrollo levantó 200 upvotes y 41 comentarios en HN — señal de que los setups de inferencia caseros siguen en auge.",
-      "context": "El artículo en rsgm.dev detalla la plataforma AI para desarrollo que el autor construyó en su homelab. Con 200 puntos y 41 comentarios en Hacker News, generó debate real en la comunidad dev. No hay summary disponible — hay que entrar al link para ver la arquitectura y herramientas usadas.",
-      "editorial": "Los homelabs AI son la nueva tendencia de los devs que no quieren depender de APIs de terceros para experimentar. Con 200 puntos en HN, este setup tocó una fibra real — cada vez más gente quiere controlar su propio stack.",
-      "source": "https://rsgm.dev/post/ai-dev-platform/",
-      "sourceLabel": "rsgm.dev",
-      "published_at": "2026-06-15T15:09:40Z",
-      "kind": ["codigo", "open-source"]
-    },
-    {
-      "id": "drafted-yc-residential-ai",
-      "tag": "Drafted",
-      "headline": "Drafted (YC P26) trae modelos AI especializados para arquitectura residencial",
-      "take": "La startup Drafted, del batch P26 de Y Combinator, presentó modelos AI para diseño de arquitectura residencial en su Launch HN con 45 comentarios.",
-      "context": "Drafted es una startup del batch P26 de Y Combinator que desarrolla modelos AI orientados a arquitectura residencial. Su Launch HN generó 45 comentarios. No hay summary público disponible — los detalles del producto y el stack están en el hilo de HN.",
-      "editorial": "AI para arquitectura residencial tiene sentido: planos, renders y revisiones son tareas repetitivas y costosas. Si Drafted logra un modelo que entiende restricciones de construcción local, puede tener un nicho sólido.",
-      "source": "https://news.ycombinator.com/item?id=48543908",
-      "sourceLabel": "news.ycombinator.com",
-      "published_at": "2026-06-15T16:47:21Z",
-      "kind": ["producto"]
-    },
-    {
-      "id": "claude-code-v2-1-114",
-      "tag": "Anthropic",
-      "headline": "Claude Code v2.1.114 corrige un crash en el diálogo de permisos de agents",
-      "take": "La actualización soluciona un crash que aparecía cuando un agent teammate pedía permiso para usar una herramienta en el panel de permisos.",
-      "context": "La versión v2.1.114 de Claude Code soluciona un bug en el permission dialog: la app se crasheaba cuando un agente del equipo solicitaba permiso para ejecutar una herramienta. No hay otros cambios documentados en este release.",
-      "editorial": "Fix puntual pero relevante para quienes usan workflows multi-agent con Claude Code — ese crash podía cortar el flujo en el peor momento posible.",
-      "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21114",
-      "sourceLabel": "github.com",
-      "published_at": "2026-06-15T22:54:08Z",
-      "kind": ["codigo", "agentes"],
-=======
       "id": "claude-code-2-1-114",
       "tag": "Anthropic",
       "headline": "Claude Code 2.1.114 arregla un crash en el diálogo de permisos",
@@ -174,7 +88,6 @@
       "sourceLabel": "github.com",
       "published_at": "2026-06-16T04:25:22Z",
       "kind": ["codigo"],
->>>>>>> Stashed changes
       "product": "Claude Code"
     },
     {
